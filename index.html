@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="card text-center">
+        <div class="card-body">
+            <h1 class="card-title">Weather Dashboard</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">   
+            <div class="col-md-3">
+                <form id="search-form">
+                    <label for="search-input"><b>Search for a City:</b></label>
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control" id="search-input" placeholder="Search" aria-describedby="button-addon5">
+                        <div class="input-group-append">
+                            <button id="search-btn" type="submit" class="btn btn-primary">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-group-vertical btn-block" id="btn-container"></div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="container-fluid p-3 my-3 border">
+                        <div class="row">
+                            <h1 id="cityName">Choose a city</h1>
+                            <h1>&nbsp;( </h1> 
+                            <h1 id="currentDate"></h1>
+                            <h1>)</h1>                        </div>
+                    <br>
+                    <p id="tempMain">Temperature: </p>
+                    <br>
+                    <p id="humMain">Humidity: </p>
+                    <br>
+                    <p id="windMain">Wind Speed: </p>
+                    <br>
+                    <p>UV index: <span id="UVI"></span></p>
+                    <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <h1>5-Day Forecast:</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 container-fluid p-3 my-3 bg-primary text-white">
+                        <a id="0">Choose a city</a>
+                        <br>                        <br>
+                        <p id="iTemp0">Temp: </p>
+                        <br>
+                        <p id="iHum0">Humidity:</p>
+                    </div>
+                    <div class="col-sm-2 container p-3 my-3 bg-primary text-white">
+                        <a id="1">Choose a city</a>
+                            <br>                            <br>
+                            <p id="iTemp1">Temp: </p>
+                            <br>
+                            <p id="iHum1">Humidity: </p>
+                    </div>
+                    <div class="col-sm-2 container p-3 my-3 bg-primary text-white">
+                        <a id="2">Choose a city</a>
+                            <br>                            <br>
+                            <p id="iTemp2">Temp: </p>
+                            <br>
+                            <p id="iHum2">Humidity: </p>
+                    </div>
+                    <div class="col-sm-2 container p-3 my-3 bg-primary text-white">
+                        <a id="3">Choose a city</a>
+                            <br>                            <br>
+                            <p id="iTemp3">Temp: </p>
+                            <br>
+                            <p id="iHum3">Humidity: </p>
+                    </div>
+                    <div class="col-sm-2 container p-3 my-3 bg-primary text-white">
+                        <a id="4">Choose a city</a>
+                            <br>                            <br>
+                            <p id="iTemp4">Temp: </p>
+                            <br>
+                            <p id="iHum4">Humidity: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/2962aa9add.js" crossorigin="anonymous"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--my js file-->
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
